@@ -1,0 +1,21 @@
+CS 537 project 1
+
+This is a reimplementation of the linux command ps.
+When executed, this program will display the information according to the cmdline options.
+This program is written in C and can only be executed on Linux machines.
+
+Compiling
+
+This program uses GCC compiler. Since there is a makefile, just use "make" to compile the program.
+
+Running
+
+Specific command line options can be found on this webpage:
+http://pages.cs.wisc.edu/~bart/537/programs/program1.html
+
+Here is an example of running:
+537ps -s -S -v
+
+Developmental Procedure
+
+We figured out how to use the function getopt() first. After that we wrote the option processing part, optproc.c and optproc.h. Next we wrote the part of processing a single file of a process, readfile.c and readfile.h. We then focus on the usage of readdir() and successfully got the information of the proc directory. The main function was wrote afterwards and we finished the project.
